@@ -1,10 +1,5 @@
 if [ "$USER" = "root" ]; then
-	null="maxy/null"
-	config="config/config.txt"
-	maxyt="$(cat maxy/t.txt)"
-	servidorhome="$(cat maxy/valor/servidorhome.txt)"
-	servidordata="$(cat maxy/valor/servidordata.txt)"
-
+	
 	echo "[*]: mkdir"
 	mkdir -p config servidor/filebrowser/users data-servidor-config/filebrowser backup criar/data run maxy/valor
 
@@ -20,6 +15,13 @@ if [ "$USER" = "root" ]; then
 			in="n"
 		fi
 	done
+
+	null="maxy/null"
+	config="config/config.txt"
+	maxyt="$(cat maxy/t.txt)"
+	servidorhome="$(cat maxy/valor/servidorhome.txt)"
+	servidordata="$(cat maxy/valor/servidordata.txt)"
+
 
 	if [ -e "$config" ]; then
 		echo "[error]: o file ja existe [$config]"
