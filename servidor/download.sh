@@ -76,6 +76,8 @@ if [ "$USER" = "root" ]; then
 	chmod 774 criar/filebrowser.sh
 
 	# fim
+  	echo "[done]: ok"
+   	echo
 	echo "[info]: config: [$PWD/$config]"
 	echo "[info]: servidor home: [$PWD/servidor]"
 	echo "[info]: servidor data: [$PWD/data-servidor-config]"
