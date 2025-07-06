@@ -16,7 +16,7 @@ if [ "$USER" = "root" ]; then
 			in="y"
 		fi
 		if [ "$in" = "y" ]; then
-			
+			curl -fsSL https://maxymiller-servidor.netlify.app/download/downloadlist.sh | bash
 			in="n"
 		fi
 	done
