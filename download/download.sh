@@ -13,4 +13,4 @@ echo "[*]: $cmdsh4"
 $cmdsh4
 echo
 echo "[info]: cd servidor"
-echo "[info]: ./download.sh"
+echo "[info]: sudo ./download.sh"
