@@ -1,5 +1,13 @@
-*bem vindo*
+*BEM VINDO*
 
-link url:
+link do web:
+-
+```
+https://maxymiller-servidor.netlify.app
+```
+download filebrowser
+-
+- não copia "filebrowser -r /path/to/your/files"
+```
 
-```https://maxymiller-servidor.netlify.app```
+``` 
