@@ -75,5 +75,6 @@ sudo apt upgrade
 desligar o servidor
 -
 - usar `htop`, `btop`, `bashtop`
+- usar `filter`
 - `./run/filebrowser.sh <data> <ip> <door> <log>`
-- `filebrowser `
+- `filebrowser -a <ip> -p <door>` 
