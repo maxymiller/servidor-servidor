@@ -10,7 +10,23 @@ if [ "$USER" = "root" ]; then
 			echo "[cat]: $filerun2"
 			cat "$filerun2" >> run.sh
    			echo cd "$maxyt$PWD$maxyt" > boot.sh
-			echo "$maxyt$PWD/run.sh$maxyt" >> boot.sh
+      			in=''
+	 		whlie [ "$in" != "n" ]; do
+    				echo "[apt]: auto upgrade? (y/N):"
+				read in
+				if [ "$in = "" ]; then
+					in="n"
+				fi
+				if [ "$in" = "n" ]; then
+					echo "$maxyt$PWD/run.sh$maxyt" >> boot.sh
+				fi
+    				if [ "$in" = "y" ]; then
+					echo "sleep 60" >> boot.sh
+     					echo "$maxyt$PWD/run.sh$maxyt apt" >> boot.sh
+					in="n"
+ 				if
+			done
+
 			echo "[backup]: config/* backup"
 			cp -r config/* backup
 			echo "[done]: ok"
