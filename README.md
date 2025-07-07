@@ -53,3 +53,11 @@ sudo ./download.sh
 ```
 sudo ./criar/filebrowser.sh
 ``` 
+- config do atalho do maxy
+- `servidoripfilebrowser` e ip do filebrowser
+- `servidordoorfilebrowser` e porta do filebrowser
+- `servidoronfilebrowser` filebrowser liga o desliga `on` = ligada o `off` = desligado
+
+```
+nano config/config.txt
+``` 
