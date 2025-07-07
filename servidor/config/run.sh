@@ -3,7 +3,7 @@ if [ "$USER" = "root" ]; then
 		echo "[$apt]: $up1"
 		$apt $up1
 		echo "[$apt]: $up2"
-		$apt $up2
+		$apt $up2 -y
 	fi
  	echo "[info]: log: [$servidorlog]"
 	if [ "$servidoronfilebrowser" = "on" ]; then
