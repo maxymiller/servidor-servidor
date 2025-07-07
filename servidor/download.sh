@@ -52,7 +52,7 @@ if [ "$USER" = "root" ]; then
 		echo "# ip door" >> "$config"
 		echo "#servidoripfilebrowser=x.x.x.x" >> "$config"
 		echo "#servidordoorfilebrowser=x" >> "$config"
-		echo "servidoronfilebrowser=''" >> "$config"
+		echo "servidoronfilebrowser=" >> "$config"
 
 		# apt
 		echo "" >> "$config"
