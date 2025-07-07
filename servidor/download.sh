@@ -1,7 +1,7 @@
 if [ "$USER" = "root" ]; then
 	
 	echo "[*]: mkdir"
-	mkdir -p config servidor/filebrowser/users data-servidor-config/filebrowser backup criar/data run maxy/valor
+	mkdir -p config servidor/filebrowser/users data-servidor-config/filebrowser backup criar/data run maxy/valor log
 
 	in=''
 	while [ "$in" != "n" ]; do
