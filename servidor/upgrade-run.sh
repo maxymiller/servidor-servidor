@@ -24,7 +24,7 @@ if [ "$USER" = "root" ]; then
 					echo "sleep 60" >> boot.sh
      					echo "$maxyt$PWD/run.sh$maxyt apt" >> boot.sh
 					in="n"
- 				if
+ 				fi
 			done
 
 			echo "[backup]: config/* backup"
