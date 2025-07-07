@@ -5,6 +5,7 @@ if [ "$USER" = "root" ]; then
 		echo "[$apt]: $up2"
 		$apt $up2
 	fi
+ 	echo "[info]: log: [$servidorlog]"
 	if [ "$servidoronfilebrowser" = "on" ]; then
 		./run/filebrowser.sh "$servidordatafilebrowser" "$servidoripfilebrowser" "$servidordoorfilebrowser" "$servidorlog" &
 		#echo "1: $servidordatafilebrowser 2: $servidoripfilebrowser 3: $servidordoorfilebrowser"
