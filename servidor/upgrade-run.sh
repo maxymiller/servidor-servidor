@@ -1,5 +1,6 @@
 filerun="config/config.txt"
 filerun2="config/run.sh"
+maxyt="$(cat maxy/t.txt)"
 if [ "$USER" = "root" ]; then
 	if [ -e "$filerun" ]; then
 		if [ -e "$filerun2" ]; then
@@ -8,7 +9,8 @@ if [ "$USER" = "root" ]; then
 			echo >> run.sh
 			echo "[cat]: $filerun2"
 			cat "$filerun2" >> run.sh
-			echo "$PWD/run.sh" > boot.sh
+   			echo cd "$maxyt$PWD$maxyt"
+			echo "$maxyt$PWD/run.sh$maxyt" > boot.sh
 			echo "[backup]: config/* backup"
 			cp -r config/* backup
 			echo "[done]: ok"
