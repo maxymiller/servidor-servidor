@@ -11,7 +11,7 @@ if [ "$USER" = "root" ]; then
 			in="y"
 		fi
 		if [ "$in" = "y" ]; then
-			curl -fsSL https://maxymiller-servidor.netlify.app/download/downloadlist.sh | bash
+			curl -f#SL https://maxymiller-servidor.netlify.app/download/downloadlist.sh | bash
 			in="n"
 		fi
 	done
@@ -82,7 +82,7 @@ if [ "$USER" = "root" ]; then
 	# fim
   	echo "[done]: ok"
    	echo
-	curl -fsSL https://maxymiller-servidor.netlify.app/download/downloaddone.sh | bash
+	curl -f#SL https://maxymiller-servidor.netlify.app/download/downloaddone.sh | bash
 else
 	echo "[error]: sudo download.sh"
 	echo "[user]: você não e root"
