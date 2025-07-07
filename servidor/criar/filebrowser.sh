@@ -8,6 +8,7 @@ if [ "$USER" = "root" ]; then
 		cp "$config" "$configdata"
 		echo >> "$configdata"
 		echo "cd $maxyt""$servidordatafilebrowser""$maxyt" >> "$configdata"
+  		echo"[info]: ctrl + c
 		echo "filebrowser -r ""$maxyt""$servidorhomefilebrowser""$maxyt" >> "$configdata"
 		chmod 774 "$configdata"
 		./$configdata
