@@ -11,7 +11,7 @@ if [ "$USER" = "root" ]; then
 			cat "$filerun2" >> run.sh
    			echo cd "$maxyt$PWD$maxyt" > boot.sh
       			in=''
-	 		whlie [ "$in" != "n" ]; do
+	 		while [ "$in" != "n" ]; do
     				echo "[apt]: auto upgrade? (y/N):"
 				read in
 				if [ "$in = "" ]; then
