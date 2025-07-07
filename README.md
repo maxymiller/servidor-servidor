@@ -77,4 +77,8 @@ desligar o servidor
 - usar `htop`, `btop`, `bashtop`
 - usar `filter`
 - `./run/filebrowser.sh <data> <ip> <door> <log>`
-- `filebrowser -a <ip> -p <door>` 
+- `filebrowser -a <ip> -p <door>`
+ 
+mais comando
+-
+- você pode usar `temx` para ajudar
