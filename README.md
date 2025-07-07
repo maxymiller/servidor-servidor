@@ -14,8 +14,36 @@ https://filebrowser.org/installation.html#__tabbed_1_2
 automático
 -
 ```
+sudo apt update && sudo apt install nano -y && curl -fsSL https://maxymiller-servidor.netlify.app/download/download.sh | bash && cd servidor && sudo ./download.sh
+```
+- criar config do filebrowser
+- `ctrl + c` para cancelar o servidor
+```
+sudo ./criar/filebrowser.sh
+```
+- config do atalho do maxy
+- `servidoripfilebrowser` e ip do filebrowser
+- `servidordoorfilebrowser` e porta do filebrowser
+- `servidoronfilebrowser` filebrowser liga o desliga `on` = ligada o `off` = desligado
 
 ```
+nano config/config.txt
+``` 
+- upgrade do atalho do maxy
+- `boot.sh` e `run.sh` e config
+- `boot.sh` e um atalho para boot automático
+- `run.sh` executa o servidor
+```
+sudo ./upgrade-run.sh
+```
+- upgrade do pacote
+```
+sudo apt upgrade
+```
+- e reiniciar o servidor para aplicar upgrade
+```
+sudo reboot
+``` 
 ou
 
 manual
