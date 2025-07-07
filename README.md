@@ -40,4 +40,16 @@ curl -fsSL https://maxymiller-servidor.netlify.app/download/download.sh | bash
 ```
 cd servidor
 ```
-- `ls` ná pasta para ver
+- `ls` para ver diretório
+```
+ls
+```
+- download pacote
+```
+sudo ./download.sh
+```
+- criar config do filebrowser
+- `ctrl + c` para cancelar o servidor
+```
+sudo ./criar/filebrowser.sh
+``` 
