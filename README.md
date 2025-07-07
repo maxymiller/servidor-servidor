@@ -67,4 +67,8 @@ nano config/config.txt
 - `run.sh` executa o servidor
 ```
 sudo ./upgrade-run.sh
-``` 
+```
+- atualizar o servidor caso você pulo etapa `upgrade do pacote`
+```
+sudo apt upgrade
+```
