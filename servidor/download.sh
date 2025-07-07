@@ -9,12 +9,12 @@ if [ "$USER" = "root" ]; then
   	if [ -e "$downloadlist" ]; then
 		echo > "$null"
 	else
-   		echo "curl -f#SL $downloadurl/$downloadlist" > "$downloadlist"
+   		echo "curl -f#SL $downloadurl/$downloadlist | bash" > "$downloadlist"
      	fi
       	if [ -e "$downloaddone" ]; then
 		echo > "$null"
        	else
-		echo "curl -f#SL $downloadurl/$downloaddone" > "$downloaddone"
+		echo "curl -f#SL $downloadurl/$downloaddone | bash" > "$downloaddone"
        	fi
   	chmod 774 $downloadlist $downloaddone
 	in=''
