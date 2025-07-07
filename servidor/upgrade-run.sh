@@ -14,7 +14,7 @@ if [ "$USER" = "root" ]; then
 	 		while [ "$in" != "n" ]; do
     				echo "[apt]: auto upgrade? (y/N):"
 				read in
-				if [ "$in = "" ]; then
+				if [ "$in" = "" ]; then
 					in="n"
 				fi
 				if [ "$in" = "n" ]; then
