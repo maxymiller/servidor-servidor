@@ -64,6 +64,7 @@ nano config/config.txt
 - upgrade do atalho do maxy
 - `boot.sh` e `run.sh` e config
 - `boot.sh` e um atalho para boot automático
+- `run.sh` executa o servidor
 ```
 sudo ./upgrade-run.sh
 ``` 
