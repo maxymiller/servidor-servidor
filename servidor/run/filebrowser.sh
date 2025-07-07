@@ -11,6 +11,7 @@ if [ "$1" != "" ]; then
 				while [ "" = "" ]; do
 				cd "$filebrowserdata"
 					filebrowser -a $filebrowserip -p $filebrowserdoor >> "$filebrowserlog"
+     					echo >> "$filebrowserlog"
 					#echo "1: $filebrowserdata 2: $filebrowserip 3: $filebrowserdoor"
 					sleep 3
 				done
