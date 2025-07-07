@@ -72,6 +72,11 @@ sudo ./upgrade-run.sh
 ```
 sudo apt upgrade
 ```
+- e reiniciar o servidor para aplicar upgrade
+```
+sudo reboot
+``` 
+ 
 desligar o servidor
 -
 - usar `htop`, `btop`, `bashtop`
