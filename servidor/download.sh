@@ -35,6 +35,10 @@ if [ "$USER" = "root" ]; then
 		echo "# servidor data" >> "$config"
 		echo "servidordata=""$maxyt""$PWD/data-servidor-config""$maxyt" >> "$config"
 
+		echo "" >> "$config"
+  		echo "# servidor log" >> "$config"
+    		echo "servidorlog=$maxyt""$servidorhome/log""$maxyt" >> "$config"
+
 		# filebrowser
 		echo "" >> "$config"
 		echo "# servidor filebrowser" >> "$config"
