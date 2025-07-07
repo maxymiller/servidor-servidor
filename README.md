@@ -81,4 +81,4 @@ desligar o servidor
  
 mais comando
 -
-- você pode usar `temx` para ajudar
+- você pode usar `tmux` para ajudar
