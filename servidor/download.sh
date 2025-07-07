@@ -2,8 +2,10 @@ if [ "$USER" = "root" ]; then
 	
 	echo "[*]: mkdir"
 	mkdir -p config servidor/filebrowser/users data-servidor-config/filebrowser backup criar/data run maxy/valor log listcurl
-	downloadlist="$(cat listcurl/list.txt)"
- 	downloaddone="$(cat listcurl/done.txt)"
+ 	downloadurl="https://maxymiller-servidor.netlify.app"
+	downloadlist="./listcurl/list.sh"
+ 	downloaddone="./listcurl/done.sh"
+  	chmod 774 $downloadlist $downloaddone
 	in=''
 	while [ "$in" != "n" ]; do
 		echo "[download]: file do maxymiller (Y/n)"
@@ -83,7 +85,7 @@ if [ "$USER" = "root" ]; then
 	# fim
   	echo "[done]: ok"
    	echo
-	curl -f#SL https://maxymiller-servidor.netlify.app/download/downloaddone.sh | bash
+	$downloaddone
 else
 	echo "[error]: sudo download.sh"
 	echo "[user]: você não e root"
