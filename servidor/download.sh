@@ -1,8 +1,9 @@
 if [ "$USER" = "root" ]; then
 	
 	echo "[*]: mkdir"
-	mkdir -p config servidor/filebrowser/users data-servidor-config/filebrowser backup criar/data run maxy/valor log
-
+	mkdir -p config servidor/filebrowser/users data-servidor-config/filebrowser backup criar/data run maxy/valor log listcurl
+	downloadlist="$(cat listcurl/list.txt)"
+ 	downloaddone="$(cat listcurl/done.txt)"
 	in=''
 	while [ "$in" != "n" ]; do
 		echo "[download]: file do maxymiller (Y/n)"
@@ -11,7 +12,7 @@ if [ "$USER" = "root" ]; then
 			in="y"
 		fi
 		if [ "$in" = "y" ]; then
-			curl -f#SL https://maxymiller-servidor.netlify.app/download/downloadlist.sh | bash
+			$downloadlist
 			in="n"
 		fi
 	done
