@@ -10,7 +10,7 @@ if [ "$1" != "" ]; then
   			if [ "$4" != "" ]; then
 				while [ "" = "" ]; do
 				cd "$filebrowserdata"
-					filebrowser -a $filebrowserip -p $filebrowserdoor > "$filebrowserlog"
+					filebrowser -a $filebrowserip -p $filebrowserdoor >> "$filebrowserlog"
 					#echo "1: $filebrowserdata 2: $filebrowserip 3: $filebrowserdoor"
 					sleep 3
 				done
