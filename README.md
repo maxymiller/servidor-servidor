@@ -72,3 +72,8 @@ sudo ./upgrade-run.sh
 ```
 sudo apt upgrade
 ```
+desligar o servidor
+-
+- usar `htop`, `btop`, `bashtop`
+- `./run/filebrowser.sh <data> <ip> <door> <log>`
+- `filebrowser `
