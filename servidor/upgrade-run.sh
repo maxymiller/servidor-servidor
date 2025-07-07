@@ -9,8 +9,8 @@ if [ "$USER" = "root" ]; then
 			echo >> run.sh
 			echo "[cat]: $filerun2"
 			cat "$filerun2" >> run.sh
-   			echo cd "$maxyt$PWD$maxyt"
-			echo "$maxyt$PWD/run.sh$maxyt" > boot.sh
+   			echo cd "$maxyt$PWD$maxyt" > boot.sh
+			echo "$maxyt$PWD/run.sh$maxyt" >> boot.sh
 			echo "[backup]: config/* backup"
 			cp -r config/* backup
 			echo "[done]: ok"
