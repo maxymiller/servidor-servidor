@@ -3,14 +3,15 @@ help="echo filebrowser.sh <dir data> <ip> <door> <log>"
 filebrowserdata="$1"
 filebrowserip="$2"
 filebrowserdoor="$3"
-filebrowserlog="$4"
+filebrowserlog="$4/filebrowser.log"
 if [ "$1" != "" ]; then
 	if [ "$2" != "" ]; then
 		if [ "$3" != "" ]; then
   			if [ "$4" != "" ]; then
+     				echo "[filebrowser]: log: $filebrowserlog]"
 				while [ "" = "" ]; do
 				cd "$filebrowserdata"
-					filebrowser -a $filebrowserip -p $filebrowserdoor > "$filebrowserlog/filebrowser.log"
+					filebrowser -a $filebrowserip -p $filebrowserdoor > "$filebrowserlog"
 					#echo "1: $filebrowserdata 2: $filebrowserip 3: $filebrowserdoor"
 					sleep 3
 				done
