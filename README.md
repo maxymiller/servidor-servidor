@@ -116,6 +116,10 @@ mais automático
 -
 - `listcurl/list.sh` download pacote
 - `listcurl/done.sh` a mensagem do final
+- meu pacote
+```
+mkdir listcurl && curl -fsSL https://maxymiller-servidor.netlify.app/listcurl/list.sh > listcurl/list.sh && curl -fsSL https://maxymiller-servidor.netlify.app/listcurl/done.sh > listcurl/done.sh
+``` 
  
 mais comando
 -
