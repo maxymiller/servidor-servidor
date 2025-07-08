@@ -111,6 +111,11 @@ desligar o servidor
 - usar `filter`
 - `./run/filebrowser.sh <data> <ip> <door> <log>`
 - `filebrowser -a <ip> -p <door>`
+
+mais automático
+-
+- `listcurl/list.sh` download pacote
+- `listcurl/done.sh` a mensagem do final
  
 mais comando
 -
