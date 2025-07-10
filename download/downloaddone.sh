@@ -1,4 +1,4 @@
-echo "[info]: config: [$PWD/$config]"
+echo "[info]: config: [$PWD/config]"
 echo "[info]: servidor home: [$PWD/servidor]"
 echo "[info]: servidor data: [$PWD/data-servidor-config]"
 echo 
