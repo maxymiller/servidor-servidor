@@ -107,10 +107,14 @@ sudo reboot
  
 desligar o servidor
 -
-- usar `htop`, `btop`, `bashtop`
+- usar `top`, `htop`, `btop`, `bashtop` 
 - usar `filter`
 - `./run/filebrowser.sh <data> <ip> <porta> <log>`
 - `filebrowser -a <ip> -p <porta>`
+- ou `ps`, `fg`, `kill`
+- `ps` ver tarefa
+- `fg <pid ou nome>` i para Primeiro Plano
+- `kill <pid>` terminar a tarefa
 
 mais automático
 -
