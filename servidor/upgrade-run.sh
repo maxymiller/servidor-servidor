@@ -4,8 +4,9 @@ maxyt="$(cat maxy/t.txt)"
 if [ "$USER" = "root" ]; then
 	if [ -e "$filerun" ]; then
 		if [ -e "$filerun2" ]; then
-			echo "[cp]: $filerun run.sh"
-			cp "$filerun" "run.sh"
+			#echo "[cp]: $filerun run.sh"
+			#cp "$filerun" "run.sh"
+   			echo "source $filerun" > run.sh
 			echo >> run.sh
 			echo "[cat]: $filerun2"
 			cat "$filerun2" >> run.sh
