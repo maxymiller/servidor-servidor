@@ -6,7 +6,7 @@ if [ "$USER" = "root" ]; then
 		if [ -e "$filerun2" ]; then
    			echo "source $filerun" > run.sh
 			echo >> run.sh
-			cat "source $filerun2" >> run.sh
+			echo "source $filerun2" >> run.sh
    			echo cd "$maxyt$PWD$maxyt" > boot.sh
       			in=''
 	 		while [ "$in" != "n" ]; do
