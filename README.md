@@ -1,3 +1,4 @@
+# servidor-servidor
 *BEM VINDO*
 
 link do web:
@@ -11,10 +12,9 @@ download filebrowser web
 ```
 https://filebrowser.org/installation.html#__tabbed_1_2
 ```
-automático
--
+# automático
 ```
-sudo apt update && sudo apt install nano -y && curl -fsSL https://maxymiller-servidor.netlify.app/download/download.sh | bash && cd servidor && sudo ./download.sh
+sudo apt update && sudo apt install nano curl -y && curl -fsSL https://maxymiller-servidor.netlify.app/download/download.sh | bash && cd servidor && sudo ./download.sh
 ```
 - criar config do filebrowser
 - `ctrl + c` para cancelar o servidor
@@ -46,8 +46,7 @@ sudo reboot
 ``` 
 ou
 
-manual
--
+# manual
 - update data do pacote
 ```
 sudo apt update
@@ -58,7 +57,7 @@ sudo apt upgrade
 ``` 
 - download pacote
 ```
-sudo apt install nano
+sudo apt install nano curl
 ```
 - download atalho do maxy
 ```
