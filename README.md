@@ -111,6 +111,7 @@ desligar o servidor
 - `./run/filebrowser.sh <data> <ip> <porta> <log>`
 - `filebrowser -a <ip> -p <porta>`
 - ou `ps`, `fg`, `kill`
+- ou `config/config.txt` e `servidoronfilebrowser=off` e kill `filebrowser -a <ip> -p <porta>`
 - `ps` ver tarefa
 - `fg <pid ou nome>` i para Primeiro Plano
 - `kill <pid>` terminar a tarefa
