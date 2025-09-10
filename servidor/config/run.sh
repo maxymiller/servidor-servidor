@@ -7,7 +7,7 @@ if [ "$USER" = "root" ]; then
 	fi
  	echo "[info]: log: [$servidorlog]"
 	if [ "$servidoronfilebrowser" = "on" ]; then
-		./run/filebrowser.sh "$servidordatafilebrowser" "$servidoripfilebrowser" "$servidordoorfilebrowser" "$servidorlog" &
+		./run/filebrowser.sh "$servidordatafilebrowser" "$servidoripfilebrowser" "$servidordoorfilebrowser" "$servidorlog" "$PWD" &
 		#echo "1: $servidordatafilebrowser 2: $servidoripfilebrowser 3: $servidordoorfilebrowser"
 	fi
 else
