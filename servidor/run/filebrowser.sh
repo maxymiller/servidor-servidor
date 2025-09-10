@@ -5,7 +5,7 @@ filebrowserip="$2"
 filebrowserdoor="$3"
 filebrowserlog="$4/filebrowser.log"
 servidorhome="$5"
-servidorload="$servidorhome/shell/load.sh"
+servidorload="$servidorhome/maxy/shell/load.sh"
 if [ "$1" != "" ]; then
 	if [ "$2" != "" ]; then
 		if [ "$3" != "" ]; then
@@ -17,7 +17,7 @@ if [ "$1" != "" ]; then
 					filebrowser -a $filebrowserip -p $filebrowserdoor >> "$filebrowserlog"
 					#echo "1: $filebrowserdata 2: $filebrowserip 3: $filebrowserdoor"
 					sleep 3
-	 				filebrowseron=$($servidorload "filebrowser" "$servidorhome")
+	 				filebrowseron=$("$servidorload" "filebrowser" "$servidorhome")
 				done
 			else
 				$help
