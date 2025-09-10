@@ -4,6 +4,7 @@ config="$home/config"
 run="$home/run"
 criar="$home/criar"
 valor="maxy/valor"
+shellmaxy="maxy/shell"
 fsSL="-f#SL"
 
 #home
@@ -35,4 +36,10 @@ echo "[*]: dir maxy/valor(3/4)"
 curl $fsSL $home/$valor/servidorhome.txt > $valor/servidorhome.txt
 echo "[*]: dir maxy/valor(4/4)"
 curl $fsSL $home/$valor/servidorhomefilebrowser.txt > $valor/servidorhomefilebrowser.txt
+
+echo "[*]: dir $shellmaxy"
+mkdir "$shellmaxy"
+curl $fsSL $home/$shellmaxy/load.sh > $shellmaxy/load.sh
+chmod 774 "$shell/load.sh"
+
 echo "[download]: done"
