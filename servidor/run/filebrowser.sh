@@ -8,12 +8,14 @@ if [ "$1" != "" ]; then
 	if [ "$2" != "" ]; then
 		if [ "$3" != "" ]; then
   			if [ "$4" != "" ]; then
-				while [ "" = "" ]; do
+	 			filebrowseron=1
+				while [ "$filebrowseron" = "1" ]; do
 					cd "$filebrowserdata"
          				echo >> "$filebrowserlog"
 					filebrowser -a $filebrowserip -p $filebrowserdoor >> "$filebrowserlog"
 					#echo "1: $filebrowserdata 2: $filebrowserip 3: $filebrowserdoor"
 					sleep 3
+	 				
 				done
 			else
 				$help
