@@ -40,6 +40,6 @@ curl $fsSL $home/$valor/servidorhomefilebrowser.txt > $valor/servidorhomefilebro
 echo "[*]: dir $shellmaxy"
 mkdir "$shellmaxy"
 curl $fsSL $home/$shellmaxy/load.sh > $shellmaxy/load.sh
-chmod 774 "$shell/load.sh"
+chmod 774 "$shellmaxy/load.sh"
 
 echo "[download]: done"
