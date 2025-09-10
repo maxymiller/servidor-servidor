@@ -108,13 +108,20 @@ desligar o servidor
 -
 - usar `top`, `htop`, `btop`, `bashtop` 
 - usar `filter`
-- `./run/filebrowser.sh <data> <ip> <porta> <log>`
-- `filebrowser -a <ip> -p <porta>`
+
 - ou `ps`, `fg`, `kill`
-- ou `config/config.txt` e `servidoronfilebrowser=off` e kill `filebrowser -a <ip> -p <porta>`
-- `ps` ver tarefa
+  - `ps` ver tarefa
 - `fg <pid ou nome>` i para Primeiro Plano
 - `kill <pid>` terminar a tarefa
+
+funciona
+- 
+- `config/config.txt` e `servidoronfilebrowser=off` e kill `filebrowser -a <ip> -p <porta>`
+
+  eu não sei porque não tá mais funcionando desligando
+  -
+  - não aparece gerenciador de tarefa
+- `./run/filebrowser.sh <data> <ip> <porta> <log>`
 
 mais automático
 -
