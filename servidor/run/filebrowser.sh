@@ -11,11 +11,13 @@ if [ "$1" != "" ]; then
 		if [ "$3" != "" ]; then
   			if [ "$4" != "" ]; then
 	 			filebrowseron=on
+	 			cd "$filebrowserdata"
 				while [ "$filebrowseron" = "on" ]; do
-					cd "$filebrowserdata"
-         				echo >> "$filebrowserlog"
+         			echo >> "$filebrowserlog"
+			 		echo "[info]: filebrowser online" >> "$filebrowserlog"
 					filebrowser -a $filebrowserip -p $filebrowserdoor >> "$filebrowserlog"
 					#echo "1: $filebrowserdata 2: $filebrowserip 3: $filebrowserdoor"
+	 				echo "[error]: filebrowser offline" >> "$filebrowserlog"
 					sleep 3
 	 				filebrowseron=$("$servidorload" "filebrowser" "$servidorhome")
 				done
