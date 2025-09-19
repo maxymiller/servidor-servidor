@@ -4,7 +4,8 @@ maxyt="$(cat maxy/t.txt)"
 if [ "$USER" = "root" ]; then
 	if [ -e "$filerun" ]; then
 		if [ -e "$filerun2" ]; then
-   			echo "source $filerun" > run.sh
+  			echo "#!/bin/bash" > run.sh
+   			echo "source $filerun" >> run.sh
 			echo >> run.sh
 			echo "source $filerun2" >> run.sh
    			echo cd "$maxyt$PWD$maxyt" > boot.sh
