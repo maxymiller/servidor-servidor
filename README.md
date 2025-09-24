@@ -6,6 +6,12 @@ link do web:
 ```
 https://maxymiller-servidor.netlify.app
 ```
+
+dica
+-
+
+- ip `0.0.0.0` = todos ip
+
 download filebrowser web
 -
 - não copia `filebrowser -r /path/to/your/files`
