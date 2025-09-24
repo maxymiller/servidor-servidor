@@ -63,7 +63,7 @@ if [ "$USER" = "root" ]; then
 
 		echo "" >> "$config"
 		echo "# ip door" >> "$config"
-		echo "#servidoripfilebrowser=x.x.x.x" >> "$config"
+		echo "#servidoripfilebrowser=0.0.0.0" >> "$config"
 		echo "#servidordoorfilebrowser=x" >> "$config"
 		echo "servidoronfilebrowser=off" >> "$config"
 
