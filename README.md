@@ -10,7 +10,7 @@ https://maxymiller-servidor.netlify.app
 dica
 -
 
-- ip `0.0.0.0` funciona, mais (eu não sei como funciona)
+- ip `0.0.0.0` = todos ip
 
 download filebrowser web
 -
